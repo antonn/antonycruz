@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antony Johnson Cruz Wilbert - DevOps & Cloud Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2c5282;
+            --accent-color: #4299e1;
+            --light-bg: #f7fafc;
+            --dark-bg: #2d3748;
+            --text-primary: #2d3748;
+            --text-secondary: #4a5568;
+        }
+
+        body {
+            color: var(--text-primary);
+        }
+
+        .hero-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, var(--light-bg) 0%, #edf2f7 100%);
+        }
+
+        .project-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: var(--secondary-color);
+            transition: color 0.2s;
+        }
+
+        .social-icon:hover {
+            color: var(--accent-color);
+        }
+
+        .skill-badge {
+            margin: 5px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            background-color: var(--secondary-color);
+            border: none;
+        }
+
+        .certification-card {
+            border-left: 4px solid var(--accent-color);
+            margin-bottom: 15px;
+            transition: transform 0.2s;
+        }
+
+        .certification-card:hover {
+            transform: translateX(5px);
+        }
+
+        .award-card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background: white;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            color: var(--primary-color) !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation remains the same -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">AJC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (same as before) -->
+    <section class="hero-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Antony Johnson Cruz Wilbert</h1>
+                    <p class="lead mb-4">Senior DevOps, Cloud & SRE Engineer</p>
+                    <p class="mb-4">16+ years of experience in designing, developing, and managing core payments
+                        processing applications. Certified AWS Solutions Architect and Azure Administrator with
+                        expertise in cloud-native development and DevOps practices.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/600/400" alt="Profile Image" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="py-5" id="awards">
+        <div class="container">
+            <h2 class="section-title text-center">Awards & Recognition</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="award-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">UBS Tech Hackathon</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2024</h6>
+                            <p class="card-text">Selected participant for innovative voice-assisted payments chatbot
+                                application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="award-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Innovation for Impact Challenge Winner</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">ACCION & Credit Suisse, 2023</h6>
+                            <p class="card-text">Won for proposing an AI-based solution to address deceptive design
+                                practices in finance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="award-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Credit Suisse Kindling Award</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2015</h6>
+                            <p class="card-text">Recognized for innovative mobile-based incident resolution practice in
+                                support team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side Projects Section -->
+    <section class="py-5 bg-light" id="projects">
+        <div class="container">
+            <h2 class="section-title text-center">Side Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="project-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Multilingual Medical AI Chatbot</h5>
+                            <p class="card-text">Developed an AI-powered chatbot using OpenAI APIs to assist users with
+                                medical queries in over 100 languages. The system provides accurate medical information
+                                while maintaining user privacy and data security.</p>
+                            <div class="mt-3">
+                                <span class="badge skill-badge">OpenAI</span>
+                                <span class="badge skill-badge">Python</span>
+                                <span class="badge skill-badge">API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="project-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">IT-Hilfe Support Volunteer</h5>
+                            <p class="card-text">Active member of IT-Hilfe Support volunteer team at Gemeinde
+                                Bassersdorf, Zurich. Providing technical assistance and digital literacy support to
+                                community members.</p>
+                            <div class="mt-3">
+                                <span class="badge skill-badge">Community Service</span>
+                                <span class="badge skill-badge">Technical Support</span>
+                                <span class="badge skill-badge">Digital Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (same as before) -->
+    <section class="py-5" id="skills">
+        <div class="container">
+            <h2 class="section-title text-center">Technical Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <h5>Languages & Frameworks</h5>
+                    <span class="badge skill-badge">Java/J2EE</span>
+                    <span class="badge skill-badge">Python3</span>
+                    <span class="badge skill-badge">Spring Boot</span>
+                    <span class="badge skill-badge">REST API</span>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Cloud & DevOps</h5>
+                    <span class="badge skill-badge">Azure</span>
+                    <span class="badge skill-badge">AWS</span>
+                    <span class="badge skill-badge">Kubernetes</span>
+                    <span class="badge skill-badge">Docker</span>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Monitoring & Tools</h5>
+                    <span class="badge skill-badge">Splunk</span>
+                    <span class="badge skill-badge">Grafana</span>
+                    <span class="badge skill-badge">Prometheus</span>
+                    <span class="badge skill-badge">AppDynamics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="mb-4">Based in Zürich, Switzerland | Available for DevOps and Cloud Engineering
+                        opportunities</p>
+                    <a href="mailto:antonycjohnson@gmail.com" class="btn btn-primary mb-4">Email Me</a>
+                    <p class="text-muted">+41 (0)76 652 45 99</p>
+                    <div class="mt-4">
+                        <span class="badge skill-badge me-2">English (Fluent)</span>
+                        <span class="badge skill-badge">German (B1 Level)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4" style="background-color: var(--dark-bg); color: white;">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Antony Johnson Cruz Wilbert. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
